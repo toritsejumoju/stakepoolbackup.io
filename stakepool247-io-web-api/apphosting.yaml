@@ -1,0 +1,52 @@
+runConfig:
+  # Runtime configuration for the Node.js API
+  runtime: nodejs20
+
+  # CPU and memory allocation
+  cpu: 1
+  memory: 512MiB
+
+  # Auto-scaling configuration
+  minInstances: 0
+  maxInstances: 10
+
+  # Concurrency (requests per instance)
+  concurrency: 100
+
+env:
+  # Environment variables for the API
+  - variable: NODE_ENV
+    value: production
+
+  - variable: PORT
+    value: "8080"
+
+  # Firebase project ID
+  - variable: FIREBASE_PROJECT_ID
+    value: stakepool247-app
+
+  # Database configuration (to be set as secrets)
+  - variable: DB_HOST
+    secret: DB_HOST
+
+  - variable: DB_USER
+    secret: DB_USER
+
+  - variable: DB_PASS
+    secret: DB_PASS
+
+  - variable: DB_NAME
+    secret: DB_NAME
+
+  - variable: DB_SSL
+    value: "true"
+
+# Build configuration
+buildConfig:
+  # Entry point script
+  script: |
+    npm install
+
+# Health check endpoint
+healthCheck:
+  path: /

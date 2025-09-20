@@ -1,0 +1,6 @@
+{
+  "apphosting": {
+    "source": ".",
+    "backend": "api-v2"
+  }
+}

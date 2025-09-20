@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "public": "stakepool247-io/build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "apphosting": {
+    "source": "stakepool247-io-web-api",
+    "backend": "api-v2"
+  }
+}

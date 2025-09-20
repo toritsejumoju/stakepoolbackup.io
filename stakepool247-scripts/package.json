@@ -1,0 +1,22 @@
+{
+  "name": "pool-json-loader",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test-json-loader": "node src/app.js json-loader",
+    "test-status-manager": "node src/app.js status-manager"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@blockfrost/blockfrost-js": "^2.0.1",
+    "bech32": "^2.0.0",
+    "bull": "^4.10.2",
+    "console-stamp": "^3.0.3",
+    "firebase-admin": "^9.11.1",
+    "node-cron": "^3.0.0",
+    "nodemailer": "^6.6.3",
+    "shelljs": "^0.8.4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "stakepool247-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/main.js",
+    "alerts": "node src/alerts.js",
+    "migrate": "node-pg-migrate",
+    "build": "echo 'No build step required for Node.js'",
+    "dev": "node src/main.js"
+  },
+  "dependencies": {
+    "@blockfrost/blockfrost-js": "^5.0.0",
+    "axios": "^0.27.2",
+    "bech32": "^2.0.0",
+    "body-parser": "^1.20.0",
+    "bull": "^4.10.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.0",
+    "express-validator": "^6.14.0",
+    "firebase-admin": "^10.1.0",
+    "jose": "^4.8.1",
+    "moment": "^2.29.3",
+    "node-cron": "^3.0.1",
+    "node-pg-migrate": "^6.2.1",
+    "pg": "^8.7.3"
+  }
+}
